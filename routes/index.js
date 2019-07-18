@@ -6,7 +6,7 @@ var request = require('request');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   var data = [];
-  var feed = request('https://www.youtube.com/channel/UCC7yLc9OgQQQ7wpoobDggFg?view_as=subscriber/rss')
+  var feed = request('https://rarigo.com/rss')
   var feedparser = new FeedParser();
 
   feed.on('error', function (error) {
